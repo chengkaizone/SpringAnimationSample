@@ -13,6 +13,10 @@
 		12B70D1C1BCC7FD100494613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B70D1A1BCC7FD100494613 /* Main.storyboard */; };
 		12B70D1E1BCC7FD100494613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B70D1D1BCC7FD100494613 /* Assets.xcassets */; };
 		12B70D211BCC7FD100494613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B70D1F1BCC7FD100494613 /* LaunchScreen.storyboard */; };
+		12B70D2D1BCC800F00494613 /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 12B70D281BCC800F00494613 /* easing.c */; settings = {ASSET_TAGS = (); }; };
+		12B70D2E1BCC800F00494613 /* easing.png in Resources */ = {isa = PBXBuildFile; fileRef = 12B70D2A1BCC800F00494613 /* easing.png */; settings = {ASSET_TAGS = (); }; };
+		12B70D2F1BCC800F00494613 /* YXEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B70D2C1BCC800F00494613 /* YXEasing.m */; settings = {ASSET_TAGS = (); }; };
+		12B70D321BCC863900494613 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B70D311BCC863900494613 /* ClockView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		12B70D1D1BCC7FD100494613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B70D201BCC7FD100494613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B70D221BCC7FD100494613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12B70D281BCC800F00494613 /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
+		12B70D291BCC800F00494613 /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
+		12B70D2A1BCC800F00494613 /* easing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easing.png; sourceTree = "<group>"; };
+		12B70D2B1BCC800F00494613 /* YXEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXEasing.h; sourceTree = "<group>"; };
+		12B70D2C1BCC800F00494613 /* YXEasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXEasing.m; sourceTree = "<group>"; };
+		12B70D301BCC863900494613 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		12B70D311BCC863900494613 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,13 @@
 				12B70D151BCC7FD100494613 /* AppDelegate.m */,
 				12B70D171BCC7FD100494613 /* ViewController.h */,
 				12B70D181BCC7FD100494613 /* ViewController.m */,
+				12B70D301BCC863900494613 /* ClockView.h */,
+				12B70D311BCC863900494613 /* ClockView.m */,
+				12B70D291BCC800F00494613 /* easing.h */,
+				12B70D281BCC800F00494613 /* easing.c */,
+				12B70D2A1BCC800F00494613 /* easing.png */,
+				12B70D2B1BCC800F00494613 /* YXEasing.h */,
+				12B70D2C1BCC800F00494613 /* YXEasing.m */,
 				12B70D1A1BCC7FD100494613 /* Main.storyboard */,
 				12B70D1D1BCC7FD100494613 /* Assets.xcassets */,
 				12B70D1F1BCC7FD100494613 /* LaunchScreen.storyboard */,
@@ -136,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B70D2E1BCC800F00494613 /* easing.png in Resources */,
 				12B70D211BCC7FD100494613 /* LaunchScreen.storyboard in Resources */,
 				12B70D1E1BCC7FD100494613 /* Assets.xcassets in Resources */,
 				12B70D1C1BCC7FD100494613 /* Main.storyboard in Resources */,
@@ -149,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12B70D2D1BCC800F00494613 /* easing.c in Sources */,
+				12B70D2F1BCC800F00494613 /* YXEasing.m in Sources */,
 				12B70D191BCC7FD100494613 /* ViewController.m in Sources */,
+				12B70D321BCC863900494613 /* ClockView.m in Sources */,
 				12B70D161BCC7FD100494613 /* AppDelegate.m in Sources */,
 				12B70D131BCC7FD100494613 /* main.m in Sources */,
 			);

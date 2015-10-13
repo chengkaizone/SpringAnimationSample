@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "easing.h"
+#import "YXEasing.h"
+#import "ClockView.h"
+
 
 @interface ViewController ()
+
+@property (nonatomic, strong) CALayer *secLayer;
+
+@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
@@ -16,12 +24,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    ClockView *showView = [[ClockView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    showView.center = self.view.center;
+    [self.view addSubview:showView];
+    
+    showView.sec = 0;
+    
+    [showView start];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
